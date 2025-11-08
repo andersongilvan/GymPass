@@ -1,0 +1,13 @@
+services:
+  postgres:
+    container_name: gymPassApp
+
+    image: postgres
+
+    ports:
+      - "5432:5432"
+
+    environment:
+      POSTGRES_USER : admin
+      POSTGRES_PASSWORD : 123456
+      POSTGRES_DB : db-gym-pass
